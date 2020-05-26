@@ -94,6 +94,7 @@ a.phone {
 .header-style .mail:hover,
 .header-style .phone:hover {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .header-style .link:focus,

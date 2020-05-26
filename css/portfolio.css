@@ -36,6 +36,7 @@ html {
 .filter-list .filter:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .filter-list .filter:focus {

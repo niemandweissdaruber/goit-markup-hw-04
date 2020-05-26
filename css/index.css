@@ -34,6 +34,20 @@ html {
   text-transform: uppercase;
 }
 
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url('../images/Hero-compressed.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* Sections */
 
 .section {
@@ -94,6 +108,36 @@ html {
   display: block;
   margin: auto;
   margin-bottom: 55px;
+}
+
+.advantages-list .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+
+  margin-bottom: 30px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-list .icon-1::before {
+  background-image: url(../images/2adv/icon-1.svg);
+}
+
+.advantages-list .icon-2::before {
+  background-image: url(../images/2adv/icon-2.svg);
+}
+
+.advantages-list .icon-3::before {
+  background-image: url(../images/2adv/icon-3.svg);
+}
+
+.advantages-list .icon-4::before {
+  background-image: url(../images/2adv/icon-4.svg);
 }
 
 /* Чем мы занимаемся */
@@ -166,6 +210,8 @@ p.caption {
 }
 
 .team-list .item {
+  cursor: pointer;
+
   background-color: var(--white-color);
   text-align: center;
 }
@@ -188,6 +234,10 @@ p.caption {
 .clients-list {
   display: flex;
   justify-content: space-around;
+}
+
+.clients-list .item {
+  cursor: pointer;
 }
 
 /* .clients-list .item + .item {
