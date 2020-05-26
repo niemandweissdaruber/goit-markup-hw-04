@@ -1,0 +1,218 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  /* outline: 1px solid red; */
+}
+
+ul,
+h1,
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.invisible-title {
+  display: none;
+}
+
+/* Header */
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  margin-right: 86px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-color {
+  color: var(--accent-color);
+}
+
+a.mail,
+a.phone {
+  color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-style {
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  padding-left: 0px;
+}
+
+.header-style .link:hover,
+.header-style .mail:hover,
+.header-style .phone:hover {
+  color: var(--accent-color);
+}
+
+.header-style .link:focus,
+.header-style .mail:focus,
+.header-style .phone:focus {
+  color: var(--accent-color);
+}
+
+.header-style {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts .item + .item {
+  margin-left: 30px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.main-nav,
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: #2f303a;
+  padding-top: 56px;
+}
+
+.logo-footer {
+  padding: 0px;
+  margin-right: 0px;
+
+  font-size: 22px;
+  line-height: 1.18;
+  color: var(--white-color);
+}
+
+.text-footer {
+  margin-top: 5px;
+  margin-bottom: 21px;
+
+  color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.contacts-container .mail-footer,
+.contacts-container .phone-footer {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0px;
+}
+
+.contacts-container .mail-footer {
+  margin-bottom: 9px;
+}
+
+.contacts-container .address {
+  color: var(--white-color);
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+
+.bottom {
+  text-align: center;
+  padding-bottom: 21px;
+  padding-top: 18px;
+  margin: 0px;
+
+  font-size: 12px;
+  line-height: 2;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socials-list {
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.socials-list .item + .item {
+  margin-left: 11px;
+}
