@@ -138,6 +138,24 @@ a.phone {
   align-items: center;
 }
 
+.envelope-icon,
+.phone-icon {
+  padding: 0;
+  border: none;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.mail,
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.header-style.mail .envelope-icon {
+  color: var(--accent-color);
+}
+
 /* Footer */
 
 footer {
