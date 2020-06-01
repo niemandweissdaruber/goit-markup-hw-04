@@ -228,6 +228,10 @@ footer {
   letter-spacing: 0.06em;
 }
 
+.order {
+  font-weight: 700;
+}
+
 .subscribe-button {
   padding: 10px 28px;
 }

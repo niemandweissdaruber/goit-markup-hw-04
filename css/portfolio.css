@@ -67,15 +67,24 @@ html {
 .examples .examples-title {
   color: var(--secondary-text-color);
 
+  margin-left: 24px;
+  padding-top: 20px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
+.item:not(:nth-child(2)) .examples-title {
+  margin-right: 24px;
+}
+
 .examples-subtitle {
   color: var(--primary-text-color);
 
+  margin-left: 24px;
+  margin-right: 24px;
   font-size: 16px;
   line-height: 1.87;
 }
@@ -85,9 +94,9 @@ html {
   line-height: 1.56;
 }
 
-.examples a > img {
+/* .examples a > img {
   margin-bottom: 20px;
-}
+} */
 
 h2 {
   margin-top: 0px;
@@ -109,6 +118,12 @@ p {
   /* margin: -15px; */
 }
 
+.border {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .examples .item {
   width: 370px;
 
@@ -116,6 +131,11 @@ p {
 
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.examples .item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 /* Альтернатива */
